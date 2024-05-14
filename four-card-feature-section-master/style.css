@@ -1,0 +1,144 @@
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+:root {
+  --ff-sans: "Poppins", sans-serif;
+
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  --fs-400: 0.9327rem;
+  --fs-500: 1.2rem;
+  --fs-600: 1.625rem;
+  --fs-900: 2.5rem;
+
+  --clr-neutral-900: hsl(234, 12%, 34%);
+  --clr-neutral-400: hsl(229, 6%, 66%);
+  --clr-neutral-100: hsl(0, 0%, 98%);
+
+  --clr-red:hsl(0, 78%, 62%);
+  --clr-cyan:hsl(180, 62%, 55%);
+  --clr-orange:hsl(34, 97%, 64%);
+  --clr-blue:hsl(212, 86%, 64%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.2;
+  color: var(--clr-neutral-400);
+  font-family: var(--ff-sans);
+}
+
+body {
+  margin: 0;
+  padding-bottom: 5rem;
+}
+
+h1 {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-light);
+}
+
+h1 > span {
+  font-weight: var(--fw-bold);
+}
+
+h1,h2,h3{
+  color: var(--clr-neutral-900);
+  line-height: 1,1;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+}
+
+.wrapper--narrow {
+  max-width: 550px;
+}
+
+header {
+  text-align: center;
+  margin-block: 6rem;
+}
+
+header > p {
+  font-size: var(--fs-500)
+}
+
+.layout-grid {
+  --gap: 2rem;
+  display:grid;
+  gap: var(--gap);
+}
+
+@media (min-width:800px) {
+  .layout-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.layout-grid > * {
+  flex: 1;
+}
+
+.col {
+  align-content: center;
+  display:grid;
+  gap: var(--gap);
+}
+
+.card {
+  --br: 0.25rem;
+  border-top: var(--br) solid;
+  border-radius: var(--br);
+  padding: 2rem;
+  box-shadow: 0 1rem 1rem -0.5rem rgb(0 50 100 / 0.2);
+}
+
+.card__img {
+  display: block;
+  margin-left:auto;
+  margin-top: 2rem;
+}
+
+.card__title {
+  font-size: var(--fs-600);
+  margin: 0;
+}
+
+.border-cyan {
+  border-color: var(--clr-cyan);
+}
+.border-orange {
+  border-color: var(--clr-orange);
+}
+.border-blue {
+  border-color: var(--clr-blue);
+}
+.border-red {
+  border-color: var(--clr-red);
+}
