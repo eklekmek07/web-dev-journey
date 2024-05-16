@@ -1,0 +1,71 @@
+* {
+    margin:0;
+    padding:0;
+    cursor: none;
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    width: 100vdh;
+    background-color: rgb(211, 249, 159);
+    padding-inline:100px;
+}
+
+.section {
+    flex:1;
+    margin:3rem;
+    background-color: azure;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15rem;
+    border-radius: 1rem;;
+    background-color: rgb(82, 109, 0);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    color:brown;
+    border: 1px red solid;
+}
+
+p {
+    font-family: "Poppins";
+    font-size: 2dvw;
+}
+
+#cursor {
+    width: 16px;
+    height: 16px;
+    background-color: red; /* Change this to your desired cursor color */
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none; /* Ensure the cursor doesn't interfere with other elements */
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    transform-origin: center;
+    z-index: 999;
+    mix-blend-mode: difference;
+}
+
+.cursor-big:hover  {
+    transform: scale(2);
+}
+
+.mouseBig {
+    margin: 50px;
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+

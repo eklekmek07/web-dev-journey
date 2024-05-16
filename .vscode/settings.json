@@ -1,0 +1,8 @@
+{
+    "editor.minimap.autohide": false,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "off",
+    "search.showLineNumbers": true,
+    "editor.renderLineHighlight": "line",
+    "debug.showInlineBreakpointCandidates": true
+}
